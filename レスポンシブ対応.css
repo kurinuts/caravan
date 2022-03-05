@@ -18,10 +18,22 @@ footer {
 
 main {
   width: 960px;
-  margin: 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
-  margin: 0 auto;
+  align-items: center;
+  background-size: cover;
+}
+
+.flex {
+  display: flex;
+  background-color: #fff;
+}
+
+.title {
+  margin: 15px 0px 5px 10px;
 }
 
 .step1 {
@@ -34,9 +46,14 @@ main {
 
 .blog-image1 {
 height: 150px;
+width: 90%;
 background-image: url(img/flow01.png);
-background-position: bottom;
 background-size: cover;
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 0 auto;
+margin-top: 10px;
 }
 
 .step2 {
@@ -49,9 +66,14 @@ background-size: cover;
 
 .blog-image2 {
   height: 150px;
+  width: 90%;
   background-image: url(img/flow02.png);
-  background-position: bottom;
   background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 10px;
 }
 
 .step3 {
@@ -64,14 +86,18 @@ background-size: cover;
 
 .blog-image3 {
   height: 150px;
+  width: 90%;
   background-image: url(img/flow03.png);
-  background-position: bottom;
   background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 10px;
 }
 
 .main h3 {
-margin-top: 15px;
-margin-bottom: 5px;
+margin-left: 10px;
 }
 
 .blog-item {
@@ -82,9 +108,11 @@ margin-bottom: 5px;
 
 .blog-text {
   width: 300px;
+  margin: 10px;
 }
 
-@media screen and (max-wisth: 768;) {
+@media screen and (max-wisth: 768px) {
+  header {
   width: 100%;
   display: block;
-}
+  }
