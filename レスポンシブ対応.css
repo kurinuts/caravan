@@ -17,23 +17,20 @@ footer {
 }
 
 main {
-  width: 960px;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  width: 100%;
   margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-size: cover;
 }
 
 .flex {
   display: flex;
   background-color: #fff;
+  width: 960px;
+  margin: 0 auto;
 }
 
 .title {
-  margin: 15px 0px 5px 10px;
+  margin: 15px 0 5px 0;
 }
 
 .step1 {
@@ -44,16 +41,20 @@ main {
   margin-left: 0;
 }
 
+.aa {
+  margin: 10px;
+}
+
 .blog-image1 {
 height: 150px;
-width: 90%;
+width: 100%;
 background-image: url(img/flow01.png);
 background-size: cover;
-display: flex;
-justify-content: center;
-align-items: center;
+/* display: flex;
+justify-content: center; */
+/* align-items: center;
 margin: 0 auto;
-margin-top: 10px;
+margin-top: 10px; */
 }
 
 .step2 {
@@ -66,14 +67,14 @@ margin-top: 10px;
 
 .blog-image2 {
   height: 150px;
-  width: 90%;
+  width: 100%;
   background-image: url(img/flow02.png);
   background-size: cover;
-  display: flex;
+  /* display: flex;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  margin-top: 10px;
+  margin: 10px; */
 }
 
 .step3 {
@@ -86,14 +87,14 @@ margin-top: 10px;
 
 .blog-image3 {
   height: 150px;
-  width: 90%;
+  width: 100%;
   background-image: url(img/flow03.png);
   background-size: cover;
-  display: flex;
+  /* display: flex;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  margin-top: 10px;
+  margin-top: 10px; */
 }
 
 .main h3 {
@@ -101,18 +102,43 @@ margin-left: 10px;
 }
 
 .blog-item {
-  width: 90%;
-  background-color: #EEEEEE;
-  margin: 20px;
-}
-
-.blog-text {
   width: 300px;
-  margin: 10px;
+  background-color: #EEEEEE;
+  margin: 50px 0px 50px 0px;
+}
+.blog-item:first-child{
+  margin-right: 30px;
 }
 
-@media screen and (max-wisth: 768px) {
-  header {
-  width: 100%;
-  display: block;
+.blog-item:last-child{
+  margin-left: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    width: 100%;
   }
+
+ .flex {
+   display: block;
+   align-items: center;
+   width: 100%;
+ }
+ .blog-item {
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.blog-image1 {
+  background-size: 100% 100%;
+}
+
+.blog-image2 {
+  background-size: cover;
+}
+
+.blog-image3 {
+  background-size: cover;
+}
+}
